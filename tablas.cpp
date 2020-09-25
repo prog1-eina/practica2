@@ -25,16 +25,16 @@ const int FIN = 0;
  */
 void presentarTabla(int n) {
     // Escribe la cabecera de la tabla de multiplicar del «n»
-    cout << '\n';
-    cout << "LA TABLA DEL " << n << '\n';
+    cout << endl;
+    cout << "LA TABLA DEL " << n << endl;
 
     // Escribe las 11 líneas de la tabla de multiplicar del «n»
     int i = 0;
     while (i <= 10) {
-        cout << setw(3) << n
-             << " x " << setw(2) << i
-             << " = " << setw(3) << n * i
-             << '\n';
+        cout << setw(3) << n 
+             << " x " << setw(2) << i 
+             << " = " << setw(3) << n * i 
+             << endl;
         i++;
     }
 }
@@ -57,7 +57,7 @@ int main() {
         presentarTabla(multiplicando);
 
         // Plantea una nueva pregunta al usuario
-        cout << '\n';
+        cout << endl;
         cout << "¿Qué tabla desea escribir (" << FIN << " para acabar)?: ";
 
         // Asigna a «multiplicando» el nuevo valor entero escrito por el usuario
