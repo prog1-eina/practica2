@@ -30,10 +30,7 @@ void presentarTabla(int n) {
     // Escribe las 11 líneas de la tabla de multiplicar del «n»
     unsigned int i = 0;
     while (i <= 10) {
-        cout << setw(3) << n 
-             << " x " << setw(2) << i 
-             << " = " << setw(3) << n * i 
-             << endl;
+        cout << setw(3) << n << " x " << setw(2) << i << " = " << setw(3) << n * i << endl;
         i++;
     }
 }
