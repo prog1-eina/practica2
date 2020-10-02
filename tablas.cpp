@@ -1,8 +1,9 @@
 /*
  * Curso de Programación 1. Práctica 2
  * Autores: Miguel Ángel Latre y Javier Martínez
- * Última revisión: 7 de octubre de 2019
- * Resumen: Programa interactivo que presenta por pantalla las tablas de multiplicar seleccionadas por el usuario.   
+ * Última revisión: 2 de octubre de 2020
+ * Resumen: Programa interactivo que presenta por pantalla las tablas de 
+ *          multiplicar seleccionadas por el usuario.   
  */
 #include <iostream>
 #include <iomanip>
@@ -11,9 +12,7 @@ using namespace std;
 const int FIN = 0;
 
 /*
- *  Pre:  ---
- *  Post: Ha presentado en la pantalla la tabla de
- *        multiplicar del «n»
+ *  Escribe en la pantalla la tabla de multiplicar del «n»:
  *
  *        LA TABLA DEL «n»
  *        «n» x  0 =  0
@@ -29,7 +28,7 @@ void presentarTabla(int n) {
     cout << "LA TABLA DEL " << n << endl;
 
     // Escribe las 11 líneas de la tabla de multiplicar del «n»
-    int i = 0;
+    unsigned int i = 0;
     while (i <= 10) {
         cout << setw(3) << n 
              << " x " << setw(2) << i 
@@ -40,12 +39,13 @@ void presentarTabla(int n) {
 }
 
 /*
- * Programa que pregunta reiteradamente al usuario qué tabla de multiplicar desea escribir y la escribe 
- * a continuación, salvo cuando el usuario responde con un 0, en cuyo caso el programa termina.
+ * Programa que pregunta reiteradamente al usuario qué tabla de multiplicar 
+ * desea escribir y la escribe a continuación, salvo cuando el usuario responde 
+ * con un 0, en cuyo caso el programa termina.
  */
 int main() {
     // Plantea la primera pregunta al usuario
-    cout << "¿Qué tabla desea escribir (" << FIN << " para acabar)?: ";
+    cout << "Tabla que desea escribir (" << FIN << " para acabar): ";
 
     // Asigna a «multiplicando» el primer valor entero escrito por el usuario
     int multiplicando;
@@ -58,7 +58,7 @@ int main() {
 
         // Plantea una nueva pregunta al usuario
         cout << endl;
-        cout << "¿Qué tabla desea escribir (" << FIN << " para acabar)?: ";
+        cout << "Tabla que desea escribir (" << FIN << " para acabar): ";
 
         // Asigna a «multiplicando» el nuevo valor entero escrito por el usuario
         cin >> multiplicando;
