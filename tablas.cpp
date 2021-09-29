@@ -1,15 +1,15 @@
-/*
+/*******************************************************************************
  * Curso de Programación 1. Práctica 2
  * Autores: Miguel Ángel Latre y Javier Martínez
- * Última revisión: 2 de octubre de 2020
+ * Última revisión: 29 de septiembre de 2021
  * Resumen: Programa interactivo que presenta por pantalla las tablas de 
  *          multiplicar seleccionadas por el usuario.   
- */
+ ******************************************************************************/
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
-const int FIN = 0;
+const unsigned FIN = 0;
 
 /*
  *  Escribe en la pantalla la tabla de multiplicar del «n»:
@@ -22,7 +22,7 @@ const int FIN = 0;
  *        «n» x  9 = ...
  *        «n» x 10 = ...
  */
-void presentarTabla(int n) {
+void presentarTabla(unsigned n) {
     // Escribe la cabecera de la tabla de multiplicar del «n»
     cout << endl;
     cout << "LA TABLA DEL " << n << endl;
@@ -45,7 +45,7 @@ int main() {
     cout << "Tabla que desea escribir (" << FIN << " para acabar): ";
 
     // Asigna a «multiplicando» el primer valor entero escrito por el usuario
-    int multiplicando;
+    unsigned multiplicando;
     cin  >>  multiplicando;
 
     // Itera hasta que el usuario responda con un valor nulo
