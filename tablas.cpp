@@ -1,7 +1,7 @@
 /*******************************************************************************
  * Curso de Programación 1. Práctica 2
  * Autores: Miguel Ángel Latre y Javier Martínez
- * Última revisión: 29 de septiembre de 2021
+ * Última revisión: 22 de septiembre de 2022
  * Resumen: Programa interactivo que presenta por pantalla las tablas de 
  *          multiplicar seleccionadas por el usuario.   
  ******************************************************************************/
@@ -60,6 +60,4 @@ int main() {
         // Asigna a «multiplicando» el nuevo valor entero escrito por el usuario
         cin >> multiplicando;
     }
-
-    return 0;
 }
